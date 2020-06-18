@@ -1,0 +1,61 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.leaflet-container {
+  width: 50%;
+  height: 50vh;
+}
+
+.custom-style {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+  --icon-width: 26px;
+  --icon-height: 26px;
+  --active-height: 40px;
+  --close-button-max-size: 12px;
+  --icon-button-max-size: 18px;
+  --primary-color: #000000;
+  --secondary-color: rgba(141, 141, 141, 0.639);
+  --border-color: rgba(0,0,0,.2);
+  --border-size: 0px;
+  --main-background-color: #ffffff;
+  --background-color-candidate: #5a6673;
+  --background-color-hover: #5a6673b3;
+  --background-color-active: #50c3bd;
+  --svg-stroke-width: 5px;
+}

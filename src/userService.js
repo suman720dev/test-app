@@ -1,5 +1,6 @@
 import { authHeader, customFetch } from "./helper";
 
+// The value will be set in the webpack.config as config according to the enviornment.
 let config = {
   apiUrl: 'http://localhost:4000'
 };
@@ -11,6 +12,17 @@ const userService = {
     getAll,
     getById
 };
+
+function register(user) {
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(user),
+  };
+  return customFetch(`${config.apiUrl}/users/register`, requestOptions).then(
+    handleResponse
+  );
+}
 
 function login(username, password) {
     const requestOptions = {
@@ -50,15 +62,6 @@ function getById(id) {
     };
 
     return customFetch(`${config.apiUrl}/users/${id}`, requestOptions).then(handleResponse);
-}
-
-function register(user) {
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(user)
-    };
-    return customFetch(`${config.apiUrl}/users/register`, requestOptions).then(handleResponse);
 }
 
 function handleResponse(response) {

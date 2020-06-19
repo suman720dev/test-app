@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import RegisterPage from "./RegisterPage";
 import Home from './Home';
+
 import LoginPage from './LoginPage';
 import PrivateRoute from "./ProtectedRoute";
 import { alertActions } from "./actions/alert";

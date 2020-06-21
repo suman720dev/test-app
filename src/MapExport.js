@@ -160,7 +160,7 @@ class MapExport extends React.Component {
             |
             <DOCDownloadLink
               fileName={`user_${user.id}_searched`}
-              elementId="docx"
+              elementId="user_searched"
             />
           </>
         ) : (

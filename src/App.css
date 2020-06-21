@@ -38,8 +38,9 @@
 } */
 
 .leaflet-container {
-  width: 50%;
-  height: 50vh;
+  height: 500px;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
 }
 
 .custom-style {
@@ -58,4 +59,8 @@
   --background-color-hover: #5a6673b3;
   --background-color-active: #50c3bd;
   --svg-stroke-width: 5px;
+}
+.leaflet {
+  height: 300px;
+  width: 100%;
 }

@@ -11,7 +11,7 @@ export default function SearchedLocation() {
     return (
       <>
         <h2>Recent Search</h2>
-        {locations.length > 0 ? (
+        {false && locations.length > 0 ? (
           <>
             <PDFDownloadLink
               document={<LocationPDF locations={locations} user={user} />}
